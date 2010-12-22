@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Elapsed Timer: Read Me first!</title>
+
+<style type="text/css">
+	body { font-family: Arial; text-align : center; line-height : 1.6em; }
+	div.container { text-align : left; width : 960px; border-radius: 5px; -moz-border-radius : 5px; border : 1px solid #777; margin : 0 auto;  padding : 10px;  -moz-box-shadow: 5px 5px 5px #ccc; -webkit-box-shadow: 5px 5px 5px #ccc; box-shadow: 5px 5px 5px #ccc; }
+	pre { background: #DDDDEE; padding: 10px;  }
+	ul.nav { float: right; list-style : none; height : 30px; }
+	ul.nav li { float : left; margin: 0; }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<ul class="nav">
+	<li><a href="demos.html">view demos</a>
+</ul>
+
+<h1>Elapsed Timer Read Me!</h1>
+
+<table>
+	<tr><td>Created by:</td><td>Emil Krautmann</td></tr>
+	<tr><td>Website:</td><td> <a href="http://ecoders.wordpress.com">http://ecoders.wordpress.com</a></td></tr>
+	<tr><td>Copyright:</td><td>&copy; 2010</td></tr>
+	<tr><td>Available:</td><td>Free for everyone to use as long as the header section is intact in the elapseMe.JS file.</td></tr>
+</table>
+
+<h2>Description:</h2>
+<p>This is basically countup script from a specific date.  It shows the days, hours, minutes and seconds that have elapsed since a given start date.  It is really simple to setup on your site.</p>
+
+<p>To use, simply add the elapseMe.js file to the your web page (in the head section). For example: </p>
+<pre>
+&lt;script type="text/javascript" src="elapseMe.js"&gt;&lt;/script&gt;
+</pre>
+
+<p>Next call the elapseMe() function either with or without options.  The DOM does need to be created before calling this function. To make sure this happens, we can wrap this call in a window.onload event like so:</p>
+
+<pre>
+&lt;script type="text/javascript"&gt;
+window.onload = function()
+{
+  elapseMe();
+  elapseMe({year: 2010, month: 5,day: 21,targetId:"elapsedTime1", show : "days"});
+  elapseMe({year: 2011, month: 0,day: 1,hr : 0, min : 0, sec: 0,targetId:"elapsedTime2", update : true, show: "all" });
+}
+&lt;/script&gt;
+</pre>
+
+
+<p>Finally, be sure to define an element in the body of the page with the same targetId you used above. For example: </p>
+
+<pre>
+&lt;div id="elapsedTime1"&gt; &lt;/div&gt;
+</pre>
+
+<h2>Options:</h2>
+
+<ul>
+ 	<li><strong>year</strong> - four digit year. Default is the current year for the time right now.</li>
+ 	<li><strong>month</strong> - must be between 0 and 11 (0 being January and 11 being December). Default is the current month for right now.</li>
+ 	<li><strong>day</strong> - the day of the month from 1 - 31. Default is the current day for right now.</li>
+ 	<li><strong>hr</strong> - the hour of the day from 0 - 23. Default is the current hour for right now.</li>
+ 	<li><strong>min</strong> - the minute of the hour from 0 - 59. Default is the current minutes for right now.</li>
+ 	<li><strong>sec</strong> - the seconds of the minute from 0 - 59. Default is the current seconds for right now.</li>
+ 	<li><strong>targetId</strong> - the id of html element to display elapsed time. Default is "elapsedTime".</li>
+ 	<li><strong>update</strong> - set to false if you do not want the elapsed time to tick over each second. Default is true.</li>
+ 	<li><strong>show</strong> - use this to define a list of values you want shown in the resulting elapsed time output. The default for this is "all" and will shows the days, hours, minutes and seconds elapsed.</li>
+</ul>
+
+<h2>Tip</h2>
+<p>This script can also be used for count downs. Just set the starting date details to a future date (for example: the upcoming new years day).</p>
+
+<h2>Wrap Up!</h2>
+<p>You may use this script as long as the header in the JS file remains intact.</p>
+<p>Thanks and enjoy!</p>
+</div>
+</body>
+</html>
