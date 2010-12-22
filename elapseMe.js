@@ -1,6 +1,7 @@
 /* HEADER
 
  Author: Emil Krautmann
+ EMAIL: emilpk@gmail.com
  Copyright 2010
 
  Description:
@@ -70,6 +71,8 @@ var elapseMe = 	(function elapseTimer(settings)
 	{
 		var d = new Date();
 		var defaults = {year: d.getFullYear(), month: d.getMonth(), day: d.getDate(), hr:d.getHours(), min: d.getMinutes(), sec: d.getSeconds(), targetId: "elapsedTime", update : true, show : "all"};
+			
+		if(typeof settings == "undefined") { settings = {}; }
 
 		/*if some settings are omitted, reset those to the default ones.*/
 		for(var i in defaults) { settings[i] = (typeof settings[i] == "undefined") ? defaults[i] : settings[i]; }
