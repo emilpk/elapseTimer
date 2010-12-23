@@ -17,9 +17,7 @@ Next call the elapseMe() function either with or without options. The DOM does n
 <script type="text/javascript">
 window.onload = function()
 {
-  elapseMe();
   elapseMe({year: 2010, month: 5,day: 21,targetId:"elapsedTime1", show : "days"});
-  elapseMe({year: 2011, month: 0,day: 1,hr : 0, min : 0, sec: 0,targetId:"elapsedTime2", update : true, show: "all" });
 }
 </script>
 
