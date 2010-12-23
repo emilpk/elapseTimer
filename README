@@ -8,7 +8,7 @@ Description:
 
 This is basically a countup script from a specific date. It shows the days, hours, minutes and seconds that have elapsed since a given start date. It is really simple to setup on your site.
 
-To use, simply add the elapseMe.js file to the your web page (in the head section). For example:
+To use, simply add the elapseMe.min.js file to the your web page (in the head section). For example:
 
 <script type="text/javascript" src="elapseMe.min.js"></script>
 
