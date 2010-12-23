@@ -1,0 +1,49 @@
+Elapsed Timer Read Me!
+Created by:	Emil Krautmann
+Website:	http://ecoders.wordpress.com
+Copyright:	© 2010
+Available:	Free for everyone to use as long as the header section is intact in the elapseMe.js file.
+
+Description:
+
+This is basically a countup script from a specific date. It shows the days, hours, minutes and seconds that have elapsed since a given start date. It is really simple to setup on your site.
+
+To use, simply add the elapseMe.js file to the your web page (in the head section). For example:
+
+<script type="text/javascript" src="elapseMe.min.js"></script>
+
+Next call the elapseMe() function either with or without options. The DOM does need to be created before calling this function. To make sure this happens, we can wrap this call in a window.onload event like so:
+
+<script type="text/javascript">
+window.onload = function()
+{
+  elapseMe();
+  elapseMe({year: 2010, month: 5,day: 21,targetId:"elapsedTime1", show : "days"});
+  elapseMe({year: 2011, month: 0,day: 1,hr : 0, min : 0, sec: 0,targetId:"elapsedTime2", update : true, show: "all" });
+}
+</script>
+
+Finally, be sure to define an element in the body of the page with the same targetId you used above. For example:
+
+<div id="elapsedTime1"> </div>
+
+Options:
+
+    * year - four digit year. Default is the current year for the time right now.
+    * month - must be between 0 and 11 (0 being January and 11 being December). Default is the current month for right now.
+    * day - the day of the month from 1 - 31. Default is the current day for right now.
+    * hr - the hour of the day from 0 - 23. Default is the current hour for right now.
+    * min - the minute of the hour from 0 - 59. Default is the current minutes for right now.
+    * sec - the seconds of the minute from 0 - 59. Default is the current seconds for right now.
+    * targetId - the id of html element to display elapsed time. Default is "elapsedTime".
+    * update - set to false if you do not want the elapsed time to tick over each second. Default is true.
+    * show - use this to define a list of values you want shown in the resulting elapsed time output. The default for this is "all" and will shows the days, hours, minutes and seconds elapsed.
+
+Tip
+
+This script can also be used for count downs. Just set the starting date details to a future date (for example: the upcoming new years day).
+Wrap Up!
+
+You may use this script as long as the header in the JS file remains intact.
+
+Thanks and enjoy!
