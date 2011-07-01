@@ -56,7 +56,7 @@ var elapseMe = 	(function elapseTimer(settings)
 		var one_second = 1000;
 		var elapsedSeconds = Math.round(milliSecondsRemaining / one_second);
 
-		resultOut  = (settings.show == "all" || settings.show.match(/days/gi) ) ? elapsedDays + " Day" + ((elapsedDays == 1) ? " ":"s ") :"";
+		var resultOut  = (settings.show == "all" || settings.show.match(/days/gi) ) ? elapsedDays + " Day" + ((elapsedDays == 1) ? " ":"s ") :"";
 		resultOut += (settings.show == "all" || settings.show.match(/hours/gi) ) ? elapsedHours + " Hour" + ((elapsedHours == 1) ? " ":"s ") :"";
 		resultOut += (settings.show == "all" || settings.show.match(/minutes/gi) ) ? elapsedMinutes + " Minute" + ((elapsedMinutes == 1) ? " ":"s ") :"";
 		resultOut += (settings.show == "all" || settings.show.match(/seconds/gi) ) ? elapsedSeconds + " Second" + ((elapsedSeconds == 1) ? " ":"s ") :"";
