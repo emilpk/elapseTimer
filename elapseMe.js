@@ -2,7 +2,7 @@
 
  Author: Emil Krautmann
  EMAIL: emilpk@gmail.com
- Website: http://ecoders.wordpress.com
+ Website: http://ecoders.dev
  
  Thanks and enjoy!
 *******************************************/
